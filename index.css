@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro";
+  min-height: 87vh;
+  margin: 0;
+  padding: 34px;
+  color: #aaa;
+  background: linear-gradient(0deg, #000, #272727);
+  text-align: center;
+  border: 20px solid #1abc9c;
+  animation: color-change 8s infinite;
+}
+
+.main-game_number-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-game_number-selection-label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.main-game_number-box-container {
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-game_number-box {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  padding: 0 30px;
+}
+
+.main-game_operation-box {
+  line-height: 145px;
+  padding: 0 30px;
+}
+
+.main-game_possible-answers-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-game_possible-answers-button {
+  font-size: 70px;
+  margin: 20px;
+  width: 170px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.main-game_result-label {
+  font-size: 30px;
+  visibility: hidden;
+  margin: 0;
+  padding: 30px;
+}
+
+.main-game_restart-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+}
+
+.correct-answer {
+  border-color: #00ff00;
+  background-color: #00ff00;
+  opacity: 80%;
+}
+
+.wrong-answer {
+  border-color: #ff0000;
+  background-color: #ff0000;
+  opacity: 80%;
+}

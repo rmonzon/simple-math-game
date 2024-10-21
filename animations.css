@@ -1,0 +1,17 @@
+@keyframes color-change {
+  0% {
+    border-color: blue;
+  }
+  25% {
+    border-color: green;
+  }
+  50% {
+    border-color: yellow;
+  }
+  75% {
+    border-color: orange;
+  }
+  100% {
+    border-color: blue;
+  }
+}
