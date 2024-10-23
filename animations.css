@@ -1,17 +1,11 @@
-@keyframes color-change {
+@keyframes float {
   0% {
-    border-color: blue;
-  }
-  25% {
-    border-color: green;
+    transform: translatey(0px);
   }
   50% {
-    border-color: yellow;
-  }
-  75% {
-    border-color: orange;
+    transform: translatey(-20px);
   }
   100% {
-    border-color: blue;
+    transform: translatey(0px);
   }
 }

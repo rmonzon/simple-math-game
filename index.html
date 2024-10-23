@@ -6,9 +6,14 @@
     <title>Simple Math Game</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body class="gradient-border">
-    <h1>Simple Math Game!</h1>
+    <h1>Math for Kindergarten</h1>
+
     <!-- <section class="main-game_number-selection">
       <p class="main-game_number-selection-label">Select number of digits:</p>
       <select id="digit-select">
@@ -18,30 +23,37 @@
       </select>
     </section> -->
 
+    <button id="home-button" class="main-game_home-button"></button>
+
     <div class="main-game_number-box-container">
       <span id="number-box-1" class="main-game_number-box"></span>
       <span id="operation-box" class="main-game_operation-box"></span>
       <span id="number-box-2" class="main-game_number-box"></span>
       <span class="main-game_operation-box">=</span>
-      <span id="answer-box" class="main-game_number-box"></span>
+      <span
+        id="answer-box"
+        class="main-game_number-box animate__animated"
+      ></span>
     </div>
-    <p id="result-label" class="main-game_result-label">Result label</p>
+    <p id="result-label" class="main-game_result-label animate__animated">
+      Result label
+    </p>
     <div class="main-game_possible-answers-box">
       <button
         id="possible-answer-box-1"
-        class="main-game_possible-answers-button"
+        class="main-game_possible-answers-button animate__animated"
       >
         00
       </button>
       <button
         id="possible-answer-box-2"
-        class="main-game_possible-answers-button"
+        class="main-game_possible-answers-button animate__animated"
       >
         00
       </button>
       <button
         id="possible-answer-box-3"
-        class="main-game_possible-answers-button"
+        class="main-game_possible-answers-button animate__animated"
       >
         00
       </button>

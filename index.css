@@ -1,17 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+
 html {
   height: 100%;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-  font-family: "Source Sans Pro";
-  min-height: 87vh;
   margin: 0;
-  padding: 34px;
-  color: #aaa;
-  background: linear-gradient(0deg, #000, #272727);
+  padding: 0;
   text-align: center;
-  border: 20px solid #1abc9c;
-  animation: color-change 8s infinite;
+  background: rgb(26, 188, 156);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(26, 188, 156, 1) 0%,
+    rgba(142, 68, 173, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 40px;
 }
 
 .main-game_number-selection {
@@ -27,19 +46,18 @@ body {
 }
 
 .main-game_number-box-container {
-  font-size: 150px;
+  font-size: 180px;
   display: flex;
   justify-content: center;
 }
 
 .main-game_number-box {
-  border: 1px solid #707070;
   border-radius: 5px;
   padding: 0 30px;
 }
 
 .main-game_operation-box {
-  line-height: 145px;
+  line-height: 15rem;
   padding: 0 30px;
 }
 
@@ -51,12 +69,14 @@ body {
 }
 
 .main-game_possible-answers-button {
-  font-size: 70px;
+  font-size: 100px;
+  font-weight: bold;
   margin: 20px;
   width: 170px;
   height: 150px;
   border-radius: 5px;
-  background-color: #fff;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -69,24 +89,35 @@ body {
 
 .main-game_restart-button {
   font-size: 20px;
+  text-transform: uppercase;
   padding: 10px 20px;
   margin: 20px;
   border: 1px solid #707070;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
-  position: relative;
-  top: 50px;
+  position: fixed;
+  bottom: 50px;
+  left: 35%;
+  right: 35%;
 }
 
 .correct-answer {
-  border-color: #00ff00;
-  background-color: #00ff00;
-  opacity: 80%;
+  color: #00ff00;
 }
 
 .wrong-answer {
-  border-color: #ff0000;
-  background-color: #ff0000;
-  opacity: 80%;
+  color: #850000;
+}
+
+.main-game_home-button {
+  background: url("icons/home.png") 0 0 no-repeat transparent;
+  background-position: center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  border: none;
 }

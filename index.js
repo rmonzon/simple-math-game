@@ -41,9 +41,11 @@ function checkAnswer(event) {
   if (selectedAnswer === correctAnswer) {
     answerBox.textContent = correctAnswer;
     event.target.classList.add("correct-answer");
+    answerBox.classList.add("correct-answer", "animate__zoomIn");
     resultLabel.textContent = "Correct answer, congratulations!";
+    resultLabel.classList.add("animate__tada");
   } else {
-    event.target.classList.add("wrong-answer");
+    event.target.classList.add("wrong-answer", "animate__jello");
     resultLabel.textContent = "Incorrect answer, try again!";
   }
 }
